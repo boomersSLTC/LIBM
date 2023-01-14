@@ -1,0 +1,257 @@
+@import '../css-utils/colors';
+
+#sidebar-wrap {
+  position: fixed;
+  left: 0;
+  width: auto;
+  height: 100vh;
+}
+
+#page-body {
+  position: relative;
+  min-height: 100vh;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  > * {
+    width: 100%;
+  }
+
+  #navbar-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 4rem;
+  }
+
+  #template-content {
+    position: relative;
+    margin-bottom: 16rem;
+
+    .rolling {
+      width: 20rem;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center;
+      background: url('/images/loading.gif') no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    .rolling-2 {
+      width: 15rem;
+      height: 15rem;
+      margin: 0 auto;
+      text-align: center;
+      background: url('/images/loading-2.gif') no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    .rolling-3 {
+      width: 3rem;
+      height: 1rem;
+      margin: 0 auto;
+      text-align: center;
+      background: url('/images/loading-3.gif') no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    .search-item-id {
+      margin: 0;
+      font-family: 'Nunito Sans', Verdana, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+      text-align: right;
+      color: $darkgray;
+    }
+
+    .search-item-title {
+      margin: 0.5rem 0;
+      font-family: 'Nunito Sans', Verdana, Helvetica, sans-serif;
+      font-size: 1.5rem;
+    }
+
+    .search-item-category {
+      margin-bottom: 0.75rem;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .search-item-authors {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+
+      li {
+        position: relative;
+        height: 1.8rem;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1.25rem;
+          height: 1.25rem;
+          border-radius: 50%;
+          content: ' ';
+          display: table;
+          background: url('/images/bust.png') $lightgray no-repeat;
+          background-size: 1rem;
+          background-position: center;
+        }
+
+        h4 {
+          margin: 0 0 0 1.75rem;
+          font-family: 'Nunito Sans', Verdana, Helvetica, sans-serif;
+          font-weight: 400;
+          font-size: 0.85rem;
+          line-height: 1.25rem;
+          color: $darkgray;
+        }
+      }
+    }
+
+    .search-item-abstract {
+      padding: 0.5rem 0;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .transaction-table {
+      width: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 1rem 0 $shadow;
+
+      * {
+        text-align: center;
+      }
+
+      table {
+        width: inherit;
+        border-spacing: 0;
+        font-size: 0.9rem;
+        margin: 0;
+
+        thead {
+          background: $darkback;
+          color: white;
+
+          tr th {
+            padding: 0.75rem;
+
+            &:first-of-type {
+              border-radius: 0.5rem 0 0 0;
+            }
+
+            &:last-of-type {
+              border-radius: 0 0.5rem 0 0;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 0.75rem 1rem;
+
+              &.status-returned {
+                color: green;
+              }
+
+              &.status-returned-overdue {
+                color: darkred;
+              }
+
+              &.status-pending {
+                color: $accent;
+              }
+
+              &.status-pending-overdue {
+                color: red;
+              }
+
+              &.transaction-book-detail-btn {
+                span {
+                  padding: 0.25rem 0.5rem;
+                  border: 1px solid $darkgray;
+                  border-radius: 0.25rem;
+                  background: $lightgray;
+                  cursor: pointer;
+                  transition: all 0.25s ease;
+
+                  &:hover {
+                    color: white;
+                    background: $accent;
+                  }
+                }
+              }
+
+              &:nth-of-type(2) {
+                position: relative;
+
+                .book-requested {
+                  position: absolute;
+                  top: 0.25rem;
+                  left: -0.25rem;
+                  width: 1.25rem;
+                  height: 1.25rem;
+                  border-radius: 50%;
+                  font-family: 'PT Sans', sans-serif;
+                  font-size: 0.75rem;
+                  line-height: 1.25rem;
+                  color: white;
+                  background: green;
+
+                  &:hover {
+                    border-radius: 0 0.625rem 0.625rem 0;
+
+                    &::after {
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      content: 'requested';
+                      display: table;
+                      width: 5.5rem;
+                      height: 1rem;
+                      border-radius: 0.625rem;
+                      line-height: 1.25rem;
+                      color: white;
+                      background: green;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:nth-of-type(even) {
+              background: $silver;
+            }
+          }
+        }
+      }
+    }
+
+    .no-transaction {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 1.5rem;
+      box-sizing: border-box;
+      border: 1px solid $lightgray;
+      border-radius: 0.5rem;
+      font-family: 'Nunito Sans', sans-serif;
+      text-align: center;
+      color: $darkgray;
+    }
+  }
+
+  #footer-wrap {
+    position: absolute;
+    bottom: 0rem;
+  }
+}
