@@ -12,7 +12,7 @@ export async function fetchGraphQLResponse(
     errorMsg: string
 ): Promise<{ data: any; errors: any } | undefined> {
     try {
-        const response = await fetch('https://5191-2402-d000-8104-715f-1d1f-35ec-7086-4471.in.ngrok.io/api', {
+        const response = await fetch('https://a2fa-203-189-184-89.in.ngrok.io/api', {
             method: 'POST',
             body: JSON.stringify({ query, variables }),
             headers: {
