@@ -67,7 +67,7 @@ export default function AuthModal() {
 
   return (
     <div id="auth-modal">
-      <h2>Welcome back</h2>
+      <h2>Welcome</h2>
       <form onSubmit={submitHandler}>
         {authFailMessage && <span>{authFailMessage}</span>}
         <input type="text" id="auth-form-user-id" placeholder="User ID" ref={userEl} required />
@@ -78,7 +78,7 @@ export default function AuthModal() {
           ref={passEl}
           required
         />
-        <input type="submit" value="Log In" />
+        <input type="submit" value="Sign In" />
       </form>
       <Link to="/">Forgot password?</Link>
     </div>

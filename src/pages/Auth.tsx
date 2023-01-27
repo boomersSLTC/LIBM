@@ -26,7 +26,7 @@ export default function AuthPage() {
               Connects – people to people, people to place, people to learning.
               <br />
               <br />
-              Cutting libraries in a recession is like cutting hospitals in a plague.
+              Expanding horizons and fostering growth, one book at a time.
             </h2>
           </div>
           <div id="auth-modal-wrap">

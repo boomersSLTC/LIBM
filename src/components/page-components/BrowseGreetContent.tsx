@@ -24,8 +24,8 @@ export default function BrowseGreetContent(props: {
           <StudyDesk />
         </div>
         <div id="browse-search-wrap">
-          <h1>Hello there!</h1>
-          <h2>Pick your mind with some keywords</h2>
+          <h1>Hello and welcome!</h1>
+          <h2>Discover new perspectives with our library</h2>
           <div id="browse-search-bar-wrap">
             <SearchBar
               searchHandler={(query: string) =>
@@ -38,7 +38,7 @@ export default function BrowseGreetContent(props: {
         </div>
       </div>
       <div id="browse-category">
-        <h2>Or, select by category</h2>
+        <h2>Or, Browse by category</h2>
         {props.categories.length === 0 && <div className="rolling"></div>}
         {props.categories.length !== 0 && (
           <div id="browse-category-blocks">

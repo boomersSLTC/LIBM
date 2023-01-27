@@ -97,7 +97,7 @@ export default function HistoryContent() {
 
   return (
     <div id="history-content" className="container">
-      <h2>History of transactions</h2>
+      <h2>Track transactions history</h2>
       {!historyFetched && <div className="rolling"></div>}
       {historyFetched && userHistory.length > 0 && (
         <div id="history-table" className="transaction-table">

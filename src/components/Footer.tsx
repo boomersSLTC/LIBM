@@ -14,9 +14,9 @@ export default function Footer() {
       <div className="container">
         <h1>LIBM</h1>
         <h2>
-          Connects – people to people, people to place, people to learning.
+          Creating opportunities, connecting people to people, people to place, and people to learning.
           <br />
-          Cutting libraries in a recession is like cutting hospitals in a plague.
+          Expanding horizons and fostering growth, one book at a time.
         </h2>
         <h3>Copyright &copy;2022 Boomers. All rights reserved.</h3>
       </div>
