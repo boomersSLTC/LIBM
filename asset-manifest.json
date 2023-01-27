@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/LIBM/static/css/main.9ee9655e.chunk.css",
-    "main.js": "/LIBM/static/js/main.aba9125d.chunk.js",
-    "main.js.map": "/LIBM/static/js/main.aba9125d.chunk.js.map",
+    "main.css": "/LIBM/static/css/main.66264920.chunk.css",
+    "main.js": "/LIBM/static/js/main.b57e8b59.chunk.js",
+    "main.js.map": "/LIBM/static/js/main.b57e8b59.chunk.js.map",
     "runtime-main.js": "/LIBM/static/js/runtime-main.9a62e919.js",
     "runtime-main.js.map": "/LIBM/static/js/runtime-main.9a62e919.js.map",
     "static/js/2.5d0fbf15.chunk.js": "/LIBM/static/js/2.5d0fbf15.chunk.js",
     "static/js/2.5d0fbf15.chunk.js.map": "/LIBM/static/js/2.5d0fbf15.chunk.js.map",
     "index.html": "/LIBM/index.html",
-    "precache-manifest.036d40ae8c23234a7335564173a3a0cb.js": "/LIBM/precache-manifest.036d40ae8c23234a7335564173a3a0cb.js",
+    "precache-manifest.c8367e8471557c5f41a2d3362c543ed2.js": "/LIBM/precache-manifest.c8367e8471557c5f41a2d3362c543ed2.js",
     "service-worker.js": "/LIBM/service-worker.js",
-    "static/css/main.9ee9655e.chunk.css.map": "/LIBM/static/css/main.9ee9655e.chunk.css.map",
+    "static/css/main.66264920.chunk.css.map": "/LIBM/static/css/main.66264920.chunk.css.map",
     "static/js/2.5d0fbf15.chunk.js.LICENSE.txt": "/LIBM/static/js/2.5d0fbf15.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9a62e919.js",
     "static/js/2.5d0fbf15.chunk.js",
-    "static/css/main.9ee9655e.chunk.css",
-    "static/js/main.aba9125d.chunk.js"
+    "static/css/main.66264920.chunk.css",
+    "static/js/main.b57e8b59.chunk.js"
   ]
 }
